@@ -33,7 +33,7 @@ function Footer() {
               <p className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-gold" />
                 <span>
-                  <span className="font-medium text-navy">Phone:</span> (650) 393-5851
+                  <span className="font-medium text-navy">Phone:</span> <a href="tel:+16503935851" className="hover:underline">(650) 393-5851</a>
                 </span>
               </p>
               <p className="flex items-center gap-3">

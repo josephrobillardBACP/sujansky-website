@@ -252,7 +252,7 @@ function MembershipPage() {
                 </h2>
                 <div className="mx-auto mb-5 h-1 w-36 bg-gold" />
                 <p className="mx-auto max-w-2xl text-[27px] leading-[3.4rem] text-foreground/88">
-                  Please call <span className="font-semibold text-navy">(650) 393-5851</span> if you have
+                  Please call <a href="tel:+16503935851" className="font-semibold text-navy hover:underline">(650) 393-5851</a> if you have
                   questions or would like to schedule an initial appointment.
                 </p>
               </div>

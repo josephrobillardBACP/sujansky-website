@@ -48,7 +48,7 @@ function HomePage() {
               <div className="mt-5 px-1 md:px-2">
                 <Link
                   to="/contact"
-                  className="mb-5 inline-flex items-center justify-center rounded-full bg-gold px-7 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-navy shadow-[0_10px_24px_rgba(15,23,42,0.28)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-white sm:mb-6 sm:px-8 sm:py-3.5 sm:text-sm"
+                  className="mb-5 inline-flex items-center justify-center rounded-full bg-[#f1d06f] px-7 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-navy shadow-[0_10px_24px_rgba(15,23,42,0.28)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#f7e094] sm:mb-6 sm:px-8 sm:py-3.5 sm:text-sm"
                 >
                   Inquire About Membership
                 </Link>
@@ -218,7 +218,7 @@ function HomePage() {
                   </h4>
                   <p className="mb-4 text-sm leading-relaxed text-foreground/80">34 North San Mateo Drive<br />Suite 1<br />San Mateo, CA 94401</p>
                   <div className="space-y-2">
-                    <p className="flex items-center gap-2 text-sm text-foreground/80"><Phone className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Phone:</span> (650) 393-5851</p>
+                    <p className="flex items-center gap-2 text-sm text-foreground/80"><Phone className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Phone:</span> <a href="tel:+16503935851" className="hover:underline">(650) 393-5851</a></p>
                     <p className="flex items-center gap-2 text-sm text-foreground/80"><Mail className="h-3.5 w-3.5 text-steely-blue" /><span className="font-medium text-navy">Fax:</span> (650) 393-5871</p>
                   </div>
                 </div>
