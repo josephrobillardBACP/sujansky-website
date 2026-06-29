@@ -48,7 +48,7 @@ function HomePage() {
               <div className="mt-5 px-1 md:px-2">
                 <Link
                   to="/contact"
-                  className="mb-5 inline-flex items-center justify-center rounded-full bg-[#f1d06f] px-7 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-navy shadow-[0_10px_24px_rgba(15,23,42,0.28)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#f7e094] sm:mb-6 sm:px-8 sm:py-3.5 sm:text-sm"
+                  className="relative z-20 mb-5 inline-flex items-center justify-center rounded-full bg-[#f1d06f] px-7 py-3 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-navy shadow-[0_10px_24px_rgba(15,23,42,0.28)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#f7e094] sm:mb-6 sm:px-8 sm:py-3.5 sm:text-sm"
                 >
                   Inquire About Membership
                 </Link>
