@@ -16,7 +16,7 @@ function ContactPage() {
           <PageSectionHeader title="Contact Us" />
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} className="space-y-6 lg:col-span-1">
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }} className="order-3 space-y-6 lg:order-1 lg:col-span-1">
               <div className="h-[420px] overflow-hidden shadow-sm border border-navy/70 bg-white">
                 <MapEmbed />
               </div>
@@ -29,14 +29,14 @@ function ContactPage() {
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="lg:col-span-1">
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="order-1 lg:order-2 lg:col-span-1">
               <div className="h-full border border-navy/70 bg-light-gray p-6 md:p-8 shadow-sm">
                 <h2 className="mb-5 border-b border-gray-200 pb-3 text-[2rem] font-semibold text-navy">Send a Message</h2>
                 <ContactForm />
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className="space-y-6 lg:col-span-1">
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} className="order-2 space-y-6 lg:order-3 lg:col-span-1">
               <div className="border border-navy/70 bg-white p-6 shadow-sm">
                 <h3 className="mb-4 flex items-center gap-2 border-b border-gray-100 pb-3 text-[2rem] font-semibold text-navy"><MapPin className="h-4 w-4 text-gold" /> Contact Information</h3>
                 <p className="mb-4 text-sm leading-relaxed text-foreground/80">34 North San Mateo Drive<br />Suite 1<br />San Mateo, CA 94401</p>

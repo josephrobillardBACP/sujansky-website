@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronDown, ChevronLeft, ChevronRight, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -14,6 +14,7 @@ function MembershipPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [hasSubmitted, setHasSubmitted] = useState(false);
   const [formData, setFormData] = useState({ first_name: '', last_name: '', email: '', phone: '' });
 
   const slides = [
@@ -163,7 +164,7 @@ function MembershipPage() {
         message: 'Interested in receiving membership information.',
       });
 
-      toast.success("Thank you for submitting. We'll be in touch soon.");
+      setHasSubmitted(true);
       setFormData({ first_name: '', last_name: '', email: '', phone: '' });
     } catch {
       toast.error('Failed to submit request. Please try again.');
@@ -264,6 +265,22 @@ function MembershipPage() {
                   Fill Out the Form Below
                 </h3>
               </div>
+              {hasSubmitted ? (
+                <div className="max-w-2xl mx-auto flex flex-col items-center justify-center gap-4 rounded-md border border-gray-200 bg-gray-100 px-6 py-12 text-center">
+                  <CheckCircle2 className="h-12 w-12 text-navy" aria-hidden="true" />
+                  <h3 className="text-[1.4rem] font-semibold text-navy">Thank you for reaching out</h3>
+                  <p className="max-w-md text-[1rem] leading-relaxed text-navy/80">
+                    Your response has been submitted. The front office team will be reaching out to you within the next 48 hours to discuss further.
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => setHasSubmitted(false)}
+                    className="mt-2 text-sm font-medium text-navy/60 underline-offset-4 transition-colors hover:text-navy hover:underline"
+                  >
+                    Send another request
+                  </button>
+                </div>
+              ) : (
               <form
                 className="max-w-2xl mx-auto space-y-5 bg-white p-6 md:p-8 shadow-sm border border-gray-200"
                 onSubmit={handleSubmit}
@@ -334,6 +351,7 @@ function MembershipPage() {
                   {isSubmitting ? 'Submitting...' : 'Submit Request'}
                 </Button>
               </form>
+              )}
             </div>
           </motion.div>
 

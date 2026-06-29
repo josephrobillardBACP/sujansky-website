@@ -59,12 +59,12 @@ function Header() {
   return (
     <header className={`sticky top-0 z-50 bg-white transition-all duration-300 ${scrolled ? 'shadow-[0_1px_3px_rgba(0,0,0,0.08)]' : ''}`}>
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          <Link to="/" className="shrink-0">
+        <div className="flex items-center justify-between h-24 sm:h-24 md:h-24">
+          <Link to="/" onClick={(e) => handleNavClick(e, '/')} className="shrink-0">
             <img
               src={logoImage}
               alt="Ulrike Sujansky, MD - Partnering in Your Health"
-              className="h-10 md:h-[3.45rem] w-auto object-contain"
+              className="h-16 sm:h-16 md:h-[3.45rem] w-auto object-contain"
             />
           </Link>
 

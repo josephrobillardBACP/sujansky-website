@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -8,6 +9,7 @@ import { submitWebsiteForm } from '@/lib/formSubmit';
 
 function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [hasSubmitted, setHasSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
@@ -37,7 +39,7 @@ function ContactForm() {
         message: formData.message,
       });
 
-      toast.success("Thank you for submitting. We'll be in touch soon.");
+      setHasSubmitted(true);
       setFormData({
         first_name: '',
         last_name: '',
@@ -52,6 +54,25 @@ function ContactForm() {
       setIsSubmitting(false);
     }
   };
+
+  if (hasSubmitted) {
+    return (
+      <div className="flex flex-col items-center justify-center gap-4 rounded-md border border-gray-200 bg-gray-100 px-6 py-12 text-center">
+        <CheckCircle2 className="h-12 w-12 text-navy" aria-hidden="true" />
+        <h3 className="text-[1.4rem] font-semibold text-navy">Thank you for reaching out</h3>
+        <p className="max-w-md text-[1rem] leading-relaxed text-navy/80">
+          Your response has been submitted. The front office team will be reaching out to you within the next 48 hours to discuss further.
+        </p>
+        <button
+          type="button"
+          onClick={() => setHasSubmitted(false)}
+          className="mt-2 text-sm font-medium text-navy/60 underline-offset-4 transition-colors hover:text-navy hover:underline"
+        >
+          Send another message
+        </button>
+      </div>
+    );
+  }
 
   return (
     <form className="space-y-4" onSubmit={handleSubmit}>
