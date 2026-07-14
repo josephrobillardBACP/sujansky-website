@@ -213,7 +213,7 @@ function ServicesPage() {
                       If you are a current patient preparing for a trip, please complete the form around three weeks in advance. Prospective patients interested in a travel kit are also welcome to reach out.
                     </p>
                     <a
-                      href="https://forms.gle/t9sRSCfSpkM2AxT79"
+                      href="https://travel.blueangelclinical.com/intake.html?practice=sujansky"
                       target="_blank"
                       rel="noreferrer"
                       className="mt-1 inline-flex min-w-[200px] justify-center border border-navy bg-navy px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-[0_10px_24px_rgba(20,36,74,0.12)] transition-colors duration-200 hover:bg-white hover:text-navy"
