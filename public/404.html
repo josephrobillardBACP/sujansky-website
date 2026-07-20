@@ -4,14 +4,17 @@
     <meta charset="utf-8" />
     <title>Redirecting...</title>
     <script>
+      // SPA fallback for GitHub Pages: when a visitor lands on a deep route
+      // (e.g. /team, /contact) via a direct URL, GitHub serves this 404 page
+      // instead of index.html. We stash the requested path in sessionStorage
+      // and bounce to /, where App.tsx picks it up and navigates.
       (function () {
-        var repoBase = "/sujansky-website/";
-        var path = window.location.pathname;
-        var relativePath = path.indexOf(repoBase) === 0 ? path.slice(repoBase.length) : "";
+        var path = window.location.pathname || "/";
         var search = window.location.search || "";
         var hash = window.location.hash || "";
+        var relativePath = path.replace(/^\/+/, "");
         sessionStorage.setItem("spa-redirect", relativePath + search + hash);
-        window.location.replace(repoBase);
+        window.location.replace("/");
       })();
     </script>
   </head>
