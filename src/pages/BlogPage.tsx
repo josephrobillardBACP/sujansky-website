@@ -158,7 +158,7 @@ function BlogPage() {
                       {featuredPost.content.map((line, index) => (
                         normalizeLine(line).startsWith('•') ? (
                           <div key={index} className="flex items-start gap-3">
-                            <span className="mt-1.5 text-gold">•</span>
+                            <span className="shrink-0 text-gold">•</span>
                             <p>{renderBoldText(normalizeLine(line).replace(/^[•]\s*/, ''))}</p>
                           </div>
                         ) : (
@@ -171,6 +171,27 @@ function BlogPage() {
                         )
                       ))}
                     </div>
+                    {featuredPost.images && featuredPost.images.length > 0 && (
+                      <div className="mx-auto mt-10 max-w-4xl px-2 md:px-4">
+                        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+                          {featuredPost.images.map((image, index) => (
+                            <figure key={index} className="flex flex-col">
+                              <img
+                                src={image.src}
+                                alt={image.alt}
+                                loading="lazy"
+                                className="w-full border border-navy/10 object-cover"
+                              />
+                              {image.caption && (
+                                <figcaption className="mt-3 text-base leading-relaxed text-foreground/70">
+                                  {image.caption}
+                                </figcaption>
+                              )}
+                            </figure>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 )}
               </motion.article>

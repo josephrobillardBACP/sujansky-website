@@ -1,3 +1,12 @@
+import capeletImage from '@/assets/sujansky-capelet-aug2026.jpg';
+import lynxReadingImage from '@/assets/sujansky-lynx-reading-aug2026.jpg';
+
+export interface BlogPostImage {
+  src: string;
+  alt: string;
+  caption?: string;
+}
+
 export interface BlogPostData {
   title: string;
   date: string;
@@ -5,9 +14,65 @@ export interface BlogPostData {
   excerpt: string;
   likes: number;
   content: string[];
+  images?: BlogPostImage[];
 }
 
 export const blogPosts: BlogPostData[] = [
+  {
+    title: 'Infectious Disease Update 8/18/2026',
+    date: 'August 18, 2026',
+    category: 'Infectious Disease Updates',
+    excerpt: 'Covid trending up in the Bay Area, CDC approval of the first mRNA flu vaccine, the ongoing Legionnaires\' outbreak in New York, an escalating Ebola emergency, a 35-year high in measles cases, a widening cyclosporiasis outbreak, and other medical news.',
+    likes: 0,
+    content: [
+      'Update on Infectious Disease Threats: What You Need to Know',
+      'Information about various infectious diseases is constantly evolving. I am hoping to summarize some of that in these newsletters. I don\'t have much medical news to report - I think all the medical journals are relaxing a bit for the summer also...:)',
+      'COVID-19',
+      'General Information',
+      '• Covid numbers are trending UP in the Bay Area as well as in much of the United States. Wastewater sampling has found increasing amounts of the virus since late June. Luckily, we have not yet seen a significant increase in hospitalizations.',
+      '• As I mentioned previously, we are expected to have a "new" COVID vaccine this fall, to better reflect the type of SARS-Cov-2 virus circulating at this point in time. So, in general, I would wait for that to come out rather than getting the older vaccine right now....',
+      'Other Infectious Diseases:',
+      'FLU:',
+      '• On August 5, the CDC approved the first influenza vaccine that uses mRNA technology (made by Moderna). Studies have found that it is about 27% more effective than a regular flu shot.',
+      'LEGIONNAIRE\'S DISEASE:',
+      '• Legionnaire\'s disease is a severe type of pneumonia caused by the bacterium "Legionella pneumophila," which is transmitted via aerosolized droplets originating from man-made water systems (water towers, hot/cold water systems, hot tubs, even hospital equipment).',
+      '• Unfortunately, there is a large outbreak of Legionnaire\'s Disease in New York right now (Manhattan\'s Upper East Side). About 60 people have fallen ill and 15 people have been hospitalized.',
+      '• Also, unfortunately, the City Health Department has not yet identified the water source associated with the outbreak.',
+      'EBOLA:',
+      '• The CDC has raised the emergency activation level for Ebola to it\'s most severe designation "reserved for critical emergencies." More than 1,200 people have been infected in Congo. The only other country with infections is Uganda.',
+      '• Treatment consists of intense medical treatment in hospitals (ventilators and oxygen therapy, blood transfusions, medications to support the body). Unfortunately, the people who have gotten ill are also the most vulnerable people, as they live in remote regions of the world without much medical care.',
+      '• Again, at this time, the disease has only been identified in the DRC and Uganda. Over 600 people have likely been infected and at least 139 people have died of the disease.',
+      '• While vaccines have been developed in the past against the Ebola virus, this new variant (called "the Bundibugyo virus") does not yet have a vaccine that works for it.',
+      'MEASLES:',
+      '• In 2026, there have been more measles cases so far than at any time in the last 35 years. There have been more cases in 2026 so far than in all of 2025. In case you\'re wondering, that\'s 2,295 cases in the U.S. this year',
+      'CYCLOSPORIASIS:',
+      '• Cyclosporiasis is a food-borne parasitic disease that leads to abdominal cramps and explosive diarrhea. It is often associated with the consumption of fresh produce.',
+      '• At this time, there is an outbreak with over 7000 of cases in 17 U.S. states. Overall, there have been 308 hospitalizations across 41 states but no deaths.',
+      '• In early August, an additional 5 states were affected by the outbreak.',
+      '• The CDC has associated the outbreak (or at least some of the disease transmission) to a single iceberg lettuce supplier that provides lettuce to Taco Bell restaurants. There may well be other sources of the disease also.',
+      '• Luckily, at this time the Michigan Department of Health has told residents that they can go back to eating their salads and greens, as the outbreak seems to be slowing down.',
+      'OTHER MEDICAL NEWS:',
+      '• A new article in Comprehensive Physiology found that yoga helped with symptoms of Irritable Bowel Syndrome (IBS). The review article summarized 10 different articles and found that people who have IBS and do yoga have fewer gastrointestinal symptoms, as well as less depression and anxiety.',
+      '• A study looking at more than 480,000 people found that the likelihood of dying of a heart attack or stroke was 39% lower in people who regularly climbed stairs...and their likelihood of dying of anything was 24% lower! Those numbers are huge! (American Journal of Cardiovascular Drugs). So, take the stairs if you are given the option...within reason!',
+      '• Meanwhile, long-term exposure to pollution increased your risk of heart disease (Radiology). So pollution is bad for your heart as well as your lungs.',
+      'About Dr. Sujansky\'s Life in These Times',
+      'Well, I just finished knitting a "capelet" (think: little cape) to throw over the shoulders when it gets cool. Picture below. Although the pattern was not difficult, this easiness made me zone out a number of times while knitting and then I kept making mistakes...so I had to unravel my work more than once. Maybe this is a larger lesson: when you think that something is pretty mindless, you should probably pay more attention (I\'m thinking slicing tomatoes!) or you can end up in trouble... I\'m sure you can come up with your own examples.)',
+      'I also attached a picture of my cat "Lynx" reading a book...all of the Sujansky family members love to read!',
+      'Take care and enjoy the beautiful weather we are having. Life is good here.',
+    ],
+    images: [
+      {
+        src: capeletImage,
+        alt: 'Dr. Sujansky wearing the purple capelet she knitted',
+        caption: 'The finished capelet.',
+      },
+      {
+        src: lynxReadingImage,
+        alt: 'Lynx, a tabby cat, resting beside a copy of the book "Decoding Your Cat"',
+        caption: 'Lynx, doing some light reading.',
+      },
+    ],
+  },
   {
     title: 'Infectious Disease Update 7/14/2026',
     date: 'July 14, 2026',
