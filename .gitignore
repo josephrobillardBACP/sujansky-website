@@ -27,3 +27,6 @@ src/assets/Rika+at+office (2).png
 
 # Local Netlify folder
 .netlify
+
+# Google Drive sync artifacts (this repo lives on a synced folder)
+desktop.ini
