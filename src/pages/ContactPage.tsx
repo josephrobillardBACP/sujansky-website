@@ -48,7 +48,7 @@ function ContactPage() {
               <div className="border border-navy/70 bg-white p-6 shadow-sm">
                 <h3 className="mb-4 flex items-center gap-2 border-b border-gray-100 pb-3 text-[2rem] font-semibold text-navy"><Clock className="h-4 w-4 text-gold" /> Office Hours</h3>
                 <div className="space-y-2.5 text-sm text-foreground/80">
-                  <div className="flex justify-between"><span className="font-medium text-navy">Mon - Fri</span><span>9:00am - 5:00pm</span></div>
+                  <div className="flex justify-between"><span className="font-medium text-navy">Mon - Fri</span><span>8:30am - 5:00pm</span></div>
                   <div className="flex justify-between"><span className="font-medium text-navy">Sat - Sun</span><span className="text-foreground/50">Closed</span></div>
                 </div>
               </div>
