@@ -21,6 +21,41 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="%BASE_URL%brand-logo.png" />
+
+    <!--
+      Local-SEO structured data. Every value here must stay identical to the
+      footer NAP and to the Google Business Profile - a mismatch in address or
+      phone actively hurts local ranking. Deliberately omitted because they are
+      not verified anywhere on the site: opening hours, geo coordinates,
+      acceptance of new patients, and any rating.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Physician",
+        "@id": "https://sujanskymd.com/#practice",
+        "name": "Ulrike Sujansky, M.D.",
+        "description": "Concierge primary care practice in San Mateo, California, offering extended, unhurried visits and 24/7 access to your physician.",
+        "url": "https://sujanskymd.com/",
+        "image": "https://sujanskymd.com/brand-logo.png",
+        "logo": "https://sujanskymd.com/brand-logo.png",
+        "telephone": "+1-650-393-5851",
+        "faxNumber": "+1-650-393-5871",
+        "medicalSpecialty": "PrimaryCare",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "34 North San Mateo Drive, Suite 1",
+          "addressLocality": "San Mateo",
+          "addressRegion": "CA",
+          "postalCode": "94401",
+          "addressCountry": "US"
+        },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "San Mateo County, California"
+        }
+      }
+    </script>
   </head>
 
   <body>

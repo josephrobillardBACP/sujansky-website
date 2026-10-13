@@ -85,7 +85,7 @@ function MembershipPage() {
     {
       question: 'How much does the program cost?',
       answer:
-        'Please call our office at 650 393-5851 to discuss current pricing. We offer discounts for couples and for annual payments. You can pay monthly, annually, or quarterly. You will not pay anything at the time of your office visit. (Note that a few services, such as some vaccinations, are not included in Dr. Sujansky\'s Private Medicine practice and will be billed separately.)',
+        'Please call our office at (650) 393-5851 to discuss current pricing. We offer discounts for couples and for annual payments. You can pay monthly, annually, or quarterly. You will not pay anything at the time of your office visit. (Note that a few services, such as some vaccinations, are not included in Dr. Sujansky\'s Private Medicine practice and will be billed separately.)',
     },
     {
       question: 'Will my private insurance reimburse my annual concierge fee?',
@@ -140,7 +140,7 @@ function MembershipPage() {
     {
       question: 'What if I have more questions?',
       answer:
-        'Please call our office at 650 393-5851 to speak with our staff. Shawna G., our office manager and Private Medicine coordinator, can discuss details of our new practice concept with you. Dr. Sujansky would also be happy to talk to you personally on the phone if you have questions.',
+        'Please call our office at (650) 393-5851 to speak with our staff. Shawna G., our office manager and Private Medicine coordinator, can discuss details of our new practice concept with you. Dr. Sujansky would also be happy to talk to you personally on the phone if you have questions.',
     },
   ];
 
