@@ -56,7 +56,7 @@ function HomePage() {
                   Ulrike Sujansky, M.D.
                 </h1>
                 <p className="hero-text mb-1 text-[2.025rem] font-medium italic leading-none tracking-[-0.02em] text-white/95 drop-shadow-[0_3px_16px_rgba(15,23,42,0.42)] md:text-[2.7rem]">
-                  Concierge Medicine
+                  Concierge Primary Care
                 </p>
                 <p className="hero-text mb-3 text-[2.025rem] font-medium italic leading-none text-white/95 drop-shadow-[0_3px_16px_rgba(15,23,42,0.42)] md:text-[2.7rem]">
                   San Mateo, CA
@@ -87,7 +87,7 @@ function HomePage() {
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               >
                 <h2 className="mb-6 text-[1.75rem] font-bold leading-snug tracking-tight text-navy md:text-[2rem]">What is Concierge Medicine?</h2>
-                <p className="mb-4 text-[1.45rem] leading-[1.85] text-foreground/90">Concierge medicine represents a return to the traditional doctor-patient relationship, where your physician has the time to truly know you and your health needs. Through an annual membership, you gain direct access to Dr. Sujansky, same-day or next-day appointments, and comprehensive care that goes beyond the constraints of traditional insurance-based medicine.</p>
+                <p className="mb-4 text-[1.45rem] leading-[1.85] text-foreground/90">Concierge medicine is a different approach to primary care: a return to the traditional doctor-patient relationship, where your physician has the time to truly know you and your health needs. Through an annual membership, you gain direct access to Dr. Sujansky, same-day or next-day appointments, and comprehensive care that goes beyond the constraints of traditional insurance-based medicine.</p>
                 <p className="mb-8 text-[1.45rem] leading-[1.85] text-foreground/90">This model allows for longer appointments, proactive health planning, and a genuine partnership in maintaining your wellbeing.</p>
                 <Link to="/services" className="inline-flex items-center text-sm font-semibold uppercase tracking-wider text-gold transition-colors hover:text-navy">
                   View Our Services <ArrowRight className="ml-1.5 h-4 w-4" />

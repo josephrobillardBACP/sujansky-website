@@ -81,11 +81,11 @@ function ServicesPage() {
       <Header />
       <main className="bg-light-gray pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
-          <PageSectionHeader title="Services" />
+          <PageSectionHeader title="Primary Care Services" />
         </div>
 
         <section id="primary-care" className="scroll-mt-24">
-          <ServiceSectionHeader title="Concierge Care" />
+          <ServiceSectionHeader title="Concierge Primary Care" />
           <div className="max-w-7xl mx-auto mb-24 px-4 sm:px-6 lg:px-8 md:mb-32">
             <div className="grid grid-cols-1 items-start gap-12 md:gap-16 lg:grid-cols-2 lg:gap-20">
               <motion.div
